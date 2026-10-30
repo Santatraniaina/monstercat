@@ -1,0 +1,9 @@
+/* main.css */
+@layer reset, base, components, utilities;
+
+@import url("reset.css")      layer(reset);
+@import url("variables.css")  layer(base);
+@import url("typography.css") layer(base);
+@import url("global.css")     layer(base);
+/*@import url("components.css")       layer(components);*/
+@import url("utilities.css")  layer(utilities);
