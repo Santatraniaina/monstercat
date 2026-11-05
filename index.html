@@ -4,16 +4,214 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Short description of the page">
-        <title>My Project</title>
-        <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+        <title>Level Days - Monstercat</title>
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/svg+xml">
         <link rel="stylesheet" href="css/main.css">
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/4bc372109d.js" crossorigin="anonymous"></script>
         <script type="module" src="js/main.js"></script>
     </head>
 
     <body>
         <header class="header">
-            <nav class="navbar"><!-- links --></nav>
+            <a class="logo" href="https://www.monstercat.com">
+                <img src="assets/images/monstercat-logo.webp" alt="Monstercat logo">
+            </a>
+
+            <ul class="social-media__links">
+                <li class="social-media__item">
+                    <a href="https://www.instagram.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://tiktok.com/@monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://twitter.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://www.twitch.tv/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitch">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://www.facebook.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://discord.com/invite/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Hamburger button -->
+            <!-- TODO: Implement open action -->
+            <button class="navbar__hamburger--open" type="button">
+                Open navbar
+            </button>
         </header>
+
+        <!-- Triggered by .navbar__hamburger -->
+        <nav class="navbar">
+            <div class="navbar__header">
+                <a class="navbar__logo" href="https://www.monstercat.com">
+                    <img src="assets/svg/monstercat-logo-white.svg" alt="Monstercat logo">
+                </a>
+                <!-- TODO: Implement Close action -->
+                <button class="navbar__hamburger--close" type="button">
+                    Close navbar
+                </button>
+            </div>
+
+            <ul class="navbar__links">
+                <li class="navbar__item navbar__item--parent">
+                    <span class="">Music</span>
+                    <ul class="navbar__sub-menu">
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/music">
+                                Our music
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/instinct">
+                                Instinct
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/uncaged">
+                                Uncaged
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/silk">
+                                Silk
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/artists">
+                        Artists
+                    </a>
+                </li>
+                <li class="navbar__item navbar__item--parent">
+                    <span class="">About</span>
+                    <ul class="navbar__sub-menu">
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/about">
+                                About Monstercat
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/diversity-and-inclusion">
+                                Diversity & Inclusion
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/code-of-ethics">
+                                Code of ethics
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/environmental">
+                                Environmental
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/contact-us">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/careers">
+                                Careers
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/news">
+                        News
+                    </a>
+                </li>
+                <li class="navbar__item navbar__item--parent">
+                    <span class="">Programming</span>
+                    <ul class="navbar__sub-menu">
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/call-of-the-wild">
+                                Call of the wild
+                            </a>
+                        </li>
+                        <li class="navbar__sub-menu-item">
+                            <a href="https://www.monstercat.com/silk-showcase">
+                                Silk showcase
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/soundscout">
+                        Soundscout
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/partners">
+                        Partners
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/press">
+                        Press
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://www.monstercat.com/shop">
+                        Shop
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="social-media__links--navbar">
+                <li class="social-media__item--navbar">
+                    <a href="https://www.instagram.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-media__item--navbar">
+                    <a href="https://tiktok.com/@monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="social-media__item--navbar">
+                    <a href="https://twitter.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-media__item--navbar">
+                    <a href="https://www.twitch.tv/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitch">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </li>
+                <li class="social-media__item--navbar">
+                    <a href="https://www.facebook.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-media__item--navbar">
+                    <a href="https://discord.com/invite/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
 
         <main>
             <section class="hero">
@@ -22,7 +220,109 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; My Project</p>
+            <div class="footer__container">
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/about">
+                            About monstercat
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/contact-us">
+                            Contact us
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/careers">
+                            Careers
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/news">
+                            News
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/press">
+                            Press
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/terms-of-service">
+                            Terms of service
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="https://www.monstercat.com/privacy-policy">
+                            Privacy policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer__informations">
+                <p class="footer__copyright">
+                    2011 - 2026 &copy; Monstercat. All rights reserved.
+                </p>
+                <ul class="social-media__links--footer">
+                    <li class="social-media__item--footer">
+                        <a href="https://www.youtube.com/user/MonstercatMedia" target="_blank" rel="noopener noreferrer" title="Monstercat on Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://www.instagram.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://tiktok.com/@monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://twitter.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://open.spotify.com/user/monstercatmedia" target="_blank" rel="noopener noreferrer" title="Monstercat on Spotify">
+                            <i class="fa-brands fa-spotify"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://music.apple.com/ca/curator/monstercat/1233905953" target="_blank" rel="noopener noreferrer" title="Monstercat on Apple Music">
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://www.twitch.tv/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Twitch">
+                            <i class="fa-brands fa-twitch"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://www.facebook.com/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-media__item--footer">
+                        <a href="https://discord.com/invite/monstercat" target="_blank" rel="noopener noreferrer" title="Monstercat on Discord">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </li>
+                    <!-- TODO: Add Triller Icon-->
+                </ul>
+            </div>
+            <div class="footer__credits">
+                <p>
+                    We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.
+                </p>
+                <p>
+                    We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.
+                </p>
+            </div>
         </footer>
     </body>
 </html>

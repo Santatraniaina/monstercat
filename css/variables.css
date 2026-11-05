@@ -1,12 +1,11 @@
 /* VARIABLES */
 
-/*
-All variables declarations
-
 :root {
-    --primary: #fbffa7;
-    --secondary: #b1c5ff;
-    --success: #b6ffc0;
-    --warning: #ff764d;
+    /* COLOR */
+    --white: #fdfdfd;
+    --blue: #1e90ff;
+    --grey: #383838;
+    --black: #000000;
+
+    /* SPACING & BORDERS */
 }
-*/

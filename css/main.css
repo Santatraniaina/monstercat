@@ -5,5 +5,4 @@
 @import url("variables.css")  layer(base);
 @import url("typography.css") layer(base);
 @import url("global.css")     layer(base);
-/*@import url("components.css")       layer(components);*/
 @import url("utilities.css")  layer(utilities);
